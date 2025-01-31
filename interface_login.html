@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface de Connexion</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('loginimage.jpg');
+            background-size: cover; /* Couvre tout l'espace disponible */
+            background-repeat: no-repeat; /* Empêche la répétition de l'image */
+            background-position: center center; /* Centre l'image */
+            
+
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 55px;;
+            width: 100%;
+            right:0px;
+        
+        }
+
+        .login {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.8);
+
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        #loginHeader {
+            background-color: #333;
+            color: white; /* Couleur du texte */
+            text-align: center; /* Alignement du texte */
+            padding: 20px; /* Espacement interne */
+            margin-bottom: 30px; /* Espacement avec le reste de la page */
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="loginHeader">
+        <h1>Bienvenue sur Notre Site</h1>
+        <p>Connectez-vous pour continuer</p>
+        <!-- Vous pouvez aussi ajouter un logo ici si nécessaire -->
+    </div>
+    
+    <div class="login">
+        <h2>Connexion</h2>
+        <form action="interface_loogin.php" method="post">
+            <input type="text" name="username" placeholder="Nom d'utilisateur" required>
+            <input type="password" name="password" placeholder="Mot de passe" required>
+            <input type="submit" value="Connexion">
+        </form>
+        <a href="creation_compte.html">cree un compte</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Gestion Financière</p>
+    </footer>
+    
+</body>
+</html>

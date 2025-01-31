@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire 2</title>
+</head>
+<body>
+    <form action="insertion.php" method="post" name="form2">
+        <fieldset style="width: 800px;margin:auto;border-style:dotted;border-color:rgb(38, 219, 213)">
+            <legend>
+                :: Gestion du profile ::
+            </legend>
+            <br>
+            <input type="radio" name="visibility" id="vpt" value="vpt"><label for="vpt">Visible pour tous</label>
+            <input type="radio" name="visibility" id="vpa" value="vpa"><label for="vpa">Visible pour les amis</label>
+            <input type="radio" name="visibility" id="Inv" value="Inv"><label for="inv">Invisible</label>
+        </fieldset>
+        <br>
+        <fieldset style="width: 800px;margin:auto;border-style:dotted;border-color:rgb(38, 219, 213)">
+            <legend>
+                :: Vos coordonées ::
+            </legend>
+                <section style="display: table">
+                <div class="cls1" style="float: left;width: 130px;margin-top: 22px">
+                    <label for="psd" name="pseudo">Pseudo :</label><br><br>
+                    <label for="sit" name="site">Site web :</label><br><br>
+                    <label for="tel" name="telephone">Telephone :</label><br><br>
+                    <label for="ema" name="email">E-mail :</label><br><br>
+                    <label for="psw" name="password">Mot de passe :</label><br><br>
+                    <label for="btd" name="birthdate">Date de naissance :</label><br><br>
+                    <label for="desc" name="description">Présentation :</label><br><br>
+                </div>
+                <div class="cls2" style="float: right;margin-top: -17px"><br><br>
+                    <input type="text" name="pseudo" id="pse" placeholder="Vos nom et prenom"><br><br>
+                    <input type="url" name="site" id="sit" placeholder="adresse de votre site web" ><br><br>
+                    <input type="tel" name="telephone" id="tel" placeholder="Votre numéro de telephone" required><br><br>
+                    <input type="email" name="email" id="emi" placeholder="Votre adresse mail" required><br><br>
+                    <input type="pasword" name="password" id="psw" placeholder="m2p" required ><br><br>
+                    <input type="date" name="birthdate" id="dan"><br><br>
+                    <textarea name="description" rows="7" cols="35">Votre présentation</textarea><br><br>   
+                </div>
+                
+                <input type="submit" value="valider" style="float" >
+                <input type="submit" value="Réinitialiser" style="margin-top: 380px;margin-left:8px">
+                <input type="submit" onclick="location.href='interface_login.html'" value="deconnexion">
+                
+            </section>
+        </fieldset>
+</form>   
+            
+
+
+    
+</body>
+</html>
